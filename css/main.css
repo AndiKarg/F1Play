@@ -11,7 +11,8 @@
     /* word-break: break-all; */
 }
 
-html, body {
+html,
+body {
     background-color: rgb(30, 30, 50);
     color: whitesmoke;
     height: 100%;
@@ -47,6 +48,8 @@ html, body {
 .driver {
     background: transparent;
     box-shadow: none;
+    text-align: center;
+    max-width: 11em;
 }
 
 .driver:hover {
@@ -54,13 +57,16 @@ html, body {
 }
 
 .drivername {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(1px);
     text-align: center;
 }
 
 .driverpic {
-    width: 10em;
+    max-width: 9em;
+    width: auto;
+    pointer-events: none;
+    vertical-align: baseline;
 }
 
 .pickgrid {
@@ -88,4 +94,11 @@ i {
 .pickcontainer {
     margin-top: 3em;
     max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.droppable {
+    min-height: 150px;
+    text-align: center;
 }
