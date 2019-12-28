@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>F1-Play</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+        <div class="grid" id="tab">
+        <input type="button" id="show" value="Ergebnisse anzeigen">
+            <div class='row tabrow'>
+                <div class='cell item'></div>
+                <div class='cell item'>Position</div>
+                <div class='cell item'>Nummer</div>
+                <div class='cell item'>Vorname</div>
+                <div class='cell item'>Nachname</div>
+                <div class='cell item'>Punkte</div>
+            </div>
+        </div>
+
+        <div class="driverinfo" style="display: none">
+            <div class="grid">
+                <input type="button" id="closeinf" value="schließen">
+            </div>
+        </div>
+
+        <a href="main.html">Main</a>
+
+    <!--JS-->
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script src="js/getResults.js"></script>
+</body>
+</html>

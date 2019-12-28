@@ -1,0 +1,70 @@
+html, body {
+    background-color: rgb(30, 30, 50);
+    color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.item {
+    background-color: rgb(60,60, 80);
+}
+
+.item, .tableitem {
+    text-align: center;
+    padding: 1%;
+    border: solid 0.5px rgba(250, 250, 250, 0.2);
+}
+
+.driverinfo {
+    color: whitesmoke;
+    position: fixed;
+    z-index: 1001;
+    width: 50%;
+    margin-left: 25%;
+    height: max-content;
+    top: 25vh;
+    background-color: rgba(250, 250, 250, 0.2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2.5%;
+}
+
+.driverinfo .row {
+    background-color: rgba(30, 30, 50, 0.9);
+    font-size: 120%;
+    text-align: center;
+}
+
+.driverinfo .row .key {
+    background-color: rgba(60, 60, 80, 0.5);
+    border-right: solid 1px rgba(245, 245, 245, 0.2);
+}
+
+#tab {
+    width: 80%;
+    margin-left: 10%;
+    height: 80vh;
+    margin-top: 5vh;
+}
+
+#tab .row {
+    font-size: 140%;
+    line-height: 5em;
+}
+
+.f1driverspic {
+    width: 5em;
+}
+
+.tabrow:hover {
+    box-shadow: 0 0 12px 0px #0478ca;
+    background-color: #338ed0;
+}
+
+@media screen and (min-width: 64em) {
+    .driverinfo {
+        background-size: contain;
+    }
+}

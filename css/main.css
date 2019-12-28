@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Formula1';
+    src: url('../fonts/Formula1-Regular_web_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Formula1', Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    /* word-break: break-all; */
+}
+
+html, body {
+    background-color: rgb(30, 30, 50);
+    color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.podtip {
+    background-color: rgb(60, 60, 80);
+}
+
+.first {
+    background-color: rgb(194, 165, 0);
+}
+
+.second {
+    background-color: silver;
+}
+
+.third {
+    background-color: chocolate;
+}
+
+.key {
+    max-width: 25%;
+}
+
+.podium .cell {
+    color: whitesmoke;
+}
+
+.driver {
+    background: transparent;
+    box-shadow: none;
+}
+
+.driver:hover {
+    background: skyblue;
+}
+
+.drivername {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    text-align: center;
+}
+
+.driverpic {
+    width: 10em;
+}
+
+.pickgrid {
+    margin-top: 5em;
+}
+
+.active {
+    display: block;
+}
+
+.togglebtn {
+    background-color: red;
+    z-index: 1001;
+    margin: 0.25em;
+}
+
+.val {
+    background-color: grey;
+}
+
+i {
+    font-family: "Font Awesome 5 Pro" !important;
+}
+
+.pickcontainer {
+    margin-top: 3em;
+    max-width: 100%;
+}

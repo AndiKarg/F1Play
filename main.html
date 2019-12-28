@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <title>F1-Play</title>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!--Font Awesome-->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/2b5b193eac.js"></script>
+        <script src="js/getAllDrivers.js"></script>
+        <script src="js/predict.js"></script>
+        <script src="js/main.js"></script>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container podtip">
+                        <div class="row">
+                            <div class="col-sm"></div>
+                            <div class="col-sm">1st</div>
+                            <div class="col-sm">2nd</div>
+                            <div class="col-sm">3rd</div>
+                        </div>
+                        <div class="row podium">
+                            <div class="col-sm key">Podium</div>
+                            <div class="col-sm first"><!--Mit Font Awsome einbinden!!--></div>
+                            <div class="col-sm second"></div>
+                            <div class="col-sm third"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container fastestlap">
+                        <div class="row">
+                            <div class="col-sm">
+                                <i class="fas fa-stopwatch"></i>
+                            </div>
+                        </div>
+                        <div class="row fastestguy">
+                            <div class="col-sm key">Schnellste Runde</div>
+                            <div class="col-sm val"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container firsretire">
+                        <div class="row">
+                            <div class="col-sm">
+                                <i class="fas fa-car-crash"></i>
+                            </div>
+                        </div>
+                        <div class="row retireguy">
+                            <div class="col-sm key">First Retirement</div>
+                            <div class="col-sm val"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+        <!--via ajax-->
+        <div class="container pickcontainer">
+            <div class="row pickrow"></div>
+        </div>
+
+
+    </body>
+</html>
